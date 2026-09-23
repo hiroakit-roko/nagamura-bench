@@ -1,6 +1,5 @@
 import fs from 'node:fs';
 import { img, head, pageHero, btn, ext, esc } from '../lib.mjs';
-import { CIO_POSTS } from '../data.mjs';
 
 const blog = JSON.parse(fs.readFileSync(new URL('../../assets/data/blog.json', import.meta.url)));
 
@@ -13,7 +12,7 @@ const president = {
       title: '社長ブログ',
       description: `飯山社長のものづくりブログ「Quality is not an act. It is a habit.」全${blog.length}本の記事アーカイブ。年別・キーワードで検索できます。`,
       body: `
-${pageHero(r, { no: 'BLOG / 01', en: "President's Blog", ja: '社長ブログ', image: 'ceo-factory', crumbs: [{ label: '社長ブログ' }], lead: '飯山社長のものづくりブログ — Quality is not an act. It is a habit.' })}
+${pageHero(r, { no: 'BLOG', en: "President's Blog", ja: '社長ブログ', image: 'ceo-factory', crumbs: [{ label: '社長ブログ' }], lead: '飯山社長のものづくりブログ — Quality is not an act. It is a habit.' })}
 
 <section class="sec is-light" aria-labelledby="latest-title">
   <div class="wrap">
@@ -48,32 +47,4 @@ ${pageHero(r, { no: 'BLOG / 01', en: "President's Blog", ja: '社長ブログ', 
   },
 };
 
-const cio = {
-  path: 'blog_cio/',
-  render(r) {
-    return {
-      title: 'ITブログ',
-      description: '中小企業のCIOが教えるDX＆デジタルマーケティング — 中小企業を応援！できることからはじめよう。長村製作所のITブログ記事一覧。',
-      body: `
-${pageHero(r, { no: 'BLOG / 02', en: 'CIO Blog', ja: 'ITブログ', image: 'job-design', crumbs: [{ label: 'ITブログ' }], lead: '中小企業のCIOが教えるDX＆デジタルマーケティング — 中小企業を応援！できることからはじめよう。' })}
-<section class="sec is-light" aria-labelledby="cio-title">
-  <div class="wrap">
-    ${head({ no: '01', en: 'All Articles', ja: `記事一覧（全${CIO_POSTS.length}本）`, id: 'cio-title', lead: 'ペーパーレス化、AIによる業務自動化、Webマーケティング。製造業の現場から、実践的なDXのノウハウを発信しています。' })}
-    <div class="faq-cat" aria-label="カテゴリ">${[...new Set(CIO_POSTS.flatMap((p) => p.c))].map((c) => `<span class="tag">${c} ${CIO_POSTS.filter((p) => p.c.includes(c)).length}</span>`).join('')}</div>
-    <div class="cio-list" data-stagger>
-      ${CIO_POSTS.map((p) => `<a class="cio" href="${p.u}" target="_blank" rel="noopener">
-        <span class="cio__meta"><time datetime="${p.d}">${p.d.replace(/-/g, '.')}</time>${p.c.map((c) => `<span class="tag">${c}</span>`).join('')}</span>
-        <h3>${p.t}</h3>
-        <p>${p.e}</p>
-        <span class="cio__more">元記事で続きを読む ${ext}<span class="sr-only">（新しいタブ）</span></span>
-      </a>`).join('')}
-    </div>
-    <p style="margin-top:48px">${btn('https://nagamura.co.jp/blog_cio/', 'ITブログ（元サイト）へ', { external: true })}</p>
-  </div>
-</section>
-`,
-    };
-  },
-};
-
-export default [president, cio];
+export default [president];

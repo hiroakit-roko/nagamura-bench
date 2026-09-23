@@ -131,10 +131,10 @@ $$('[data-stagger]').forEach((wrap) => {
 });
 
 /* ---------- counters ---------- */
-const cio = new IntersectionObserver((entries) => {
+const countIO = new IntersectionObserver((entries) => {
   entries.forEach((en) => {
     if (!en.isIntersecting) return;
-    const el = en.target; cio.unobserve(el);
+    const el = en.target; countIO.unobserve(el);
     const to = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec || '0', 10);
     if (reduce) { el.textContent = to.toFixed(dec); return; }
     const t0 = performance.now(), dur = 1600;
@@ -146,7 +146,7 @@ const cio = new IntersectionObserver((entries) => {
     requestAnimationFrame(step);
   });
 }, { threshold: 0.5 });
-$$('[data-count]').forEach((el) => cio.observe(el));
+$$('[data-count]').forEach((el) => countIO.observe(el));
 
 /* ---------- parallax & timeline progress ---------- */
 const para = $$('[data-parallax]');

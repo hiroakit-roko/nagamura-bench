@@ -15,12 +15,7 @@ export const NAV = [
       { href: 'products/', label: '製品紹介', en: 'Products', img: 'pr-03_01', desc: '配線盤・19インチラック・電話室 ほか' },
     ],
   },
-  {
-    label: 'ブログ', en: 'BLOG', items: [
-      { href: 'blog/', label: '社長ブログ', en: "President's Blog", img: 'ceo-factory', desc: '飯山社長のものづくりブログ' },
-      { href: 'blog_cio/', label: 'ITブログ', en: 'CIO Blog', img: 'job-design', desc: 'DX＆デジタルマーケティング' },
-    ],
-  },
+  { href: 'blog/', label: '社長ブログ', en: 'BLOG' },
   { href: 'recruit/', label: '採用情報', en: 'RECRUIT' },
   { href: 'faq/', label: 'よくある質問', en: 'FAQ' },
 ];
@@ -110,7 +105,7 @@ function footer(r) {
       <div class="ftr__nav">
         ${col('企業情報', [['', 'ホーム'], ['advantage/', '長村製作所の強み'], ['management/', '経営方針'], ['company/', '会社概要'], ['company/#greeting', '代表挨拶'], ['company/#profile', '会社基本情報'], ['company/#history', '会社沿革'], ['company/#access', 'アクセス']])}
         ${col('技術情報', [['technology/', '技術情報'], ['equipment/', '設備概要'], ['products/', '製品紹介'], ['faq/', 'よくある質問']])}
-        ${col('インフォメーション', [['news/', '新着情報'], ['blog/', '社長ブログ'], ['blog_cio/', 'ITブログ'], ['recruit/', '採用情報'], ['contact/', 'お問合せ'], ['privacy/', '個人情報保護方針'], ['sitemap/', 'サイトマップ']])}
+        ${col('インフォメーション', [['news/', '新着情報'], ['blog/', '社長ブログ'], ['recruit/', '採用情報'], ['contact/', 'お問合せ'], ['privacy/', '個人情報保護方針'], ['sitemap/', 'サイトマップ']])}
         ${col('自社ブランド', [['https://nagamura.co.jp/smox/', 'SMOX 喫煙ブース', 1], ['https://nagamura.co.jp/kovako/', 'KOVAKO ファクトリーブース', 1], ['https://nagamura.co.jp/monobo/', 'Monobo テレワークブース', 1]])}
       </div>
     </div>

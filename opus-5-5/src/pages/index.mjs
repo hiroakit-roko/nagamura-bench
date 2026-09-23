@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { img, imgUrl, head, btn, arrow, ext, yearsSinceFounding } from '../lib.mjs';
-import { EQ_TOTAL_UNITS, EQ_TOTAL_KINDS, PRODUCTS, NEWS, CIO_POSTS } from '../data.mjs';
+import { EQ_TOTAL_UNITS, EQ_TOTAL_KINDS, PRODUCTS, NEWS } from '../data.mjs';
 
 const blog = JSON.parse(fs.readFileSync(new URL('../../assets/data/blog.json', import.meta.url)));
 
@@ -204,8 +204,6 @@ export default {
       <div>
         <div class="col-head"><h3><small>NEWS</small>新着情報</h3><a class="textlink" href="${r}news/">一覧を見る ${arrow}</a></div>
         <ul class="posts">${NEWS.map((n) => `<li><a class="post" href="${r}news/#n${n.date}"><time datetime="${n.date}">${n.date.replace(/-/g, '.')}</time><span class="post__t">${n.title}</span>${arrow}</a></li>`).join('')}</ul>
-        <div class="col-head" style="margin-top:48px"><h3><small>CIO BLOG</small>ITブログ</h3><a class="textlink" href="${r}blog_cio/">記事一覧 ${arrow}</a></div>
-        <ul class="posts">${CIO_POSTS.slice(0, 2).map((p) => `<li><a class="post" href="${p.u}" target="_blank" rel="noopener"><time datetime="${p.d}">${p.d.replace(/-/g, '.')}</time><span class="post__t">${p.t}</span>${ext}<span class="sr-only">（元記事・新しいタブ）</span></a></li>`).join('')}</ul>
       </div>
     </div>
   </div>
