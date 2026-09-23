@@ -1,24 +1,395 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="ja" data-page="index">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claude Fable 5.1 — 準備中</title>
-<style>
-  :root { color-scheme: dark; }
-  body { margin:0; min-height:100vh; display:grid; place-items:center; background:#0b0d10; color:#e8eaed;
-         font-family: system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif; }
-  main { text-align:center; padding:24px; }
-  h1 { font-weight:600; letter-spacing:.04em; margin:0 0 8px; }
-  p { color:#9aa0a6; margin:0 0 24px; }
-  a { color:#8ab4f8; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株式会社長村製作所 | 栃木県栃木市の精密板金加工のプロフェッショナル</title>
+<meta name="description" content="長村製作所は栃木県栃木市にある精密板金加工を得意とするプロフェッショナル集団です。試作から出荷まで一貫して対応可能です。屋外用公衆電話室や各種配線盤の筐体・ラックの製作をおこなってきました。単品・量産にも柔軟に対応できる体制を整えています。">
+<meta name="theme-color" content="#0b0e13">
+<meta property="og:title" content="株式会社長村製作所 | 栃木県栃木市の精密板金加工のプロフェッショナル">
+<meta property="og:description" content="長村製作所は栃木県栃木市にある精密板金加工を得意とするプロフェッショナル集団です。試作から出荷まで一貫して対応可能です。屋外用公衆電話室や各種配線盤の筐体・ラックの製作をおこなってきました。単品・量産にも柔軟に対応できる体制を整えています。">
+<meta property="og:site_name" content="株式会社長村製作所">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="assets/img/brand/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js","three/addons/":"./assets/vendor/three/"}}</script>
+
 </head>
 <body>
-<main>
-  <h1>Claude Fable 5.1</h1>
-  <p>このモデルのサイトはまだ制作されていません。</p>
-  <a href="../">← ベンチマーク一覧へ戻る</a>
+<div id="top"></div>
+<a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="株式会社長村製作所 ホーム">
+      <img class="brand__logo brand__logo--white" src="assets/img/brand/logo-white.png" width="409" height="104" alt="株式会社長村製作所" decoding="async">
+      <img class="brand__logo brand__logo--red" src="assets/img/brand/logo-red.png" width="409" height="104" alt="" aria-hidden="true" decoding="async">
+    </a>
+    <nav class="nav" aria-label="グローバルナビゲーション"><ul class="nav__list"><li class="nav__item has-sub">
+        <button type="button" class="nav__link" aria-expanded="false" aria-haspopup="true">企業情報<svg class="nav__chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <ul class="nav__sub"><li><a href="advantage.html"><span class="nav__sub-en">ADVANTAGE</span><span>長村製作所の強み</span></a></li><li><a href="management.html"><span class="nav__sub-en">MANAGEMENT</span><span>経営方針</span></a></li><li><a href="company.html"><span class="nav__sub-en">COMPANY</span><span>会社概要</span></a></li></ul>
+      </li><li class="nav__item has-sub">
+        <button type="button" class="nav__link" aria-expanded="false" aria-haspopup="true">技術情報<svg class="nav__chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <ul class="nav__sub"><li><a href="technology.html"><span class="nav__sub-en">TECHNOLOGY</span><span>技術情報</span></a></li><li><a href="equipment.html"><span class="nav__sub-en">EQUIPMENT</span><span>設備概要</span></a></li></ul>
+      </li><li class="nav__item has-sub">
+        <button type="button" class="nav__link" aria-expanded="false" aria-haspopup="true">製品紹介<svg class="nav__chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <ul class="nav__sub"><li><a href="products.html"><span class="nav__sub-en">PRODUCTS</span><span>製品紹介</span></a></li><li><a href="smox.html"><span class="nav__sub-en">SMOX</span><span>SMOX（喫煙ブース）</span></a></li><li><a href="kovako.html"><span class="nav__sub-en">KOVAKO</span><span>KOVAKO（ファクトリーブース）</span></a></li><li><a href="monobo.html"><span class="nav__sub-en">MONOBO</span><span>Monobo（テレワークブース）</span></a></li></ul>
+      </li><li class="nav__item has-sub">
+        <button type="button" class="nav__link" aria-expanded="false" aria-haspopup="true">ブログ<svg class="nav__chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <ul class="nav__sub"><li><a href="blog.html"><span class="nav__sub-en">PRESIDENT BLOG</span><span>社長ブログ</span></a></li><li><a href="blog-cio.html"><span class="nav__sub-en">IT BLOG</span><span>ITブログ</span></a></li></ul>
+      </li><li class="nav__item"><a class="nav__link" href="recruit.html">採用情報</a></li><li class="nav__item"><a class="nav__link" href="faq.html">よくある質問</a></li></ul></nav>
+    <div class="site-header__tools">
+      <a class="header-tel" href="tel:0282451341"><span class="header-tel__num">0282-45-1341</span><span class="header-tel__hours">受付 8:25〜17:00（平日）</span></a>
+      <a class="btn btn--accent btn--sm header-cta" href="contact.html"><span>お問合せ</span></a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="menu" aria-expanded="false"><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__label">MENU</span></button>
+    </div>
+  </div>
+</header>
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__inner">
+    <ul class="menu__list"><li class="menu__group"><p class="menu__label">企業情報</p><ul><li><a href="advantage.html"><span class="menu__en">ADVANTAGE</span>長村製作所の強み</a></li><li><a href="management.html"><span class="menu__en">MANAGEMENT</span>経営方針</a></li><li><a href="company.html"><span class="menu__en">COMPANY</span>会社概要</a></li></ul></li><li class="menu__group"><p class="menu__label">技術情報</p><ul><li><a href="technology.html"><span class="menu__en">TECHNOLOGY</span>技術情報</a></li><li><a href="equipment.html"><span class="menu__en">EQUIPMENT</span>設備概要</a></li></ul></li><li class="menu__group"><p class="menu__label">製品紹介</p><ul><li><a href="products.html"><span class="menu__en">PRODUCTS</span>製品紹介</a></li><li><a href="smox.html"><span class="menu__en">SMOX</span>SMOX（喫煙ブース）</a></li><li><a href="kovako.html"><span class="menu__en">KOVAKO</span>KOVAKO（ファクトリーブース）</a></li><li><a href="monobo.html"><span class="menu__en">MONOBO</span>Monobo（テレワークブース）</a></li></ul></li><li class="menu__group"><p class="menu__label">ブログ</p><ul><li><a href="blog.html"><span class="menu__en">PRESIDENT BLOG</span>社長ブログ</a></li><li><a href="blog-cio.html"><span class="menu__en">IT BLOG</span>ITブログ</a></li></ul></li><li class="menu__group"><a class="menu__single" href="recruit.html"><span class="menu__en">RECRUIT</span>採用情報</a></li><li class="menu__group"><a class="menu__single" href="faq.html"><span class="menu__en">FAQ</span>よくある質問</a></li>
+      <li class="menu__group"><a class="menu__single" href="contact.html"><span class="menu__en">CONTACT</span>お問い合わせ</a></li>
+      <li class="menu__group"><a class="menu__single" href="news.html"><span class="menu__en">NEWS</span>新着情報</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a class="menu__tel" href="tel:0282451341">0282-45-1341</a>
+      <p>受付時間 8:25〜17:00（平日）</p>
+      <p>〒329-4411 栃木県栃木市大平町横堀みずほ5-1</p>
+    </div>
+  </div>
+</div>
+<main id="main" class="site-main">
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="メインビジュアル">
+  <div class="hero__media">
+    <video playsinline muted loop autoplay preload="metadata" poster="assets/video/poster.jpg" aria-hidden="true" tabindex="-1">
+      <source src="assets/video/hero.webm" type="video/webm">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero__scan" aria-hidden="true"></div>
+  <p class="hero__side" aria-hidden="true">NAGAMURA MFG. CO. — TOCHIGI, JAPAN — SINCE 1938</p>
+  <div class="container hero__inner">
+    <p class="hero__kicker">HIGH TECHNOLOGY &amp; HIGH QUALITY</p>
+    <h1 class="hero__title">
+      <span class="line"><span>創業<span class="years js-years">88</span><span class="unit">年</span></span></span>
+      <span class="line"><span>精密板金加工の</span></span>
+      <span class="line"><span>一貫体制<span class="thin"><span class="ph">設計・製造から</span><span class="ph">塗装・検査・出荷まで、</span><span class="ph">社内で完結。</span></span></span></span>
+    </h1>
+    <p class="hero__sub">長村製作所は栃木県栃木市にある精密板金加工を得意とするプロフェッショナル集団です。試作から出荷まで一貫して対応可能。屋外用公衆電話室や各種配線盤の筐体・ラックの製作を通じ、単品・量産にも柔軟に対応できる体制を整えています。</p>
+    <div class="hero__actions">
+      <a class="btn btn--accent" href="technology.html" ><span>技術情報を見る</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--line" href="contact.html" ><span>お問合せ・お見積り</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="hero__bottom">
+      <ul class="hero__stats" aria-label="長村製作所の基本データ">
+        <li class="hero__stat"><b>1938</b><span>FOUNDED</span></li>
+        <li class="hero__stat"><b>ISO<small>9001 / 14001</small></b><span>CERTIFIED</span></li>
+        <li class="hero__stat"><b>0.5<small>〜6.0mm</small></b><span>SHEET THICKNESS</span></li>
+        <li class="hero__stat"><b>3<small>素材</small></b><span>鉄 / ステンレス / アルミ</span></li>
+      </ul>
+      <p class="hero__scroll" aria-hidden="true">SCROLL <i></i></p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item"><i></i>精密板金加工</span><span class="marquee__item"><i></i>光配線盤</span><span class="marquee__item"><i></i>19インチラック</span><span class="marquee__item"><i></i>屋外公衆電話室</span><span class="marquee__item"><i></i>喫煙ブース SMOX</span><span class="marquee__item"><i></i>ファクトリーブース KOVAKO</span><span class="marquee__item"><i></i>テレワークブース Monobo</span><span class="marquee__item"><i></i>ISO 9001</span><span class="marquee__item"><i></i>ISO 14001</span><span class="marquee__item"><i></i>樋門ハウス</span><span class="marquee__item"><i></i>シールドキャビネット</span>
+  </div>
+</div>
+
+<!-- ===== ADVANTAGE ===== -->
+<section class="section section--dark section--grid" id="advantage" aria-labelledby="adv-title">
+  <div class="container">
+    <div class="reveal"><div class="sec-head sec-head--dark sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">01</span><span class="eyebrow__en">ADVANTAGE</span></p>
+    <h2 class="sec-title" id="adv-title">最新鋭の設備と、<br>その設備を使いこなす経験。</h2>
+    <p class="sec-lead">高い技術力でお客様のニーズにお応えします。精密板金加工を得意とする長村製作所では、試作から、単品・量産にも柔軟に対応できる金属板金加工設備の体制を整えています。お客様のご要望に応えるため、今まで培われたノウハウがございます。綿密なお打ち合わせのもと、金属板金加工の設計・開発・製造から、塗装・検査・出荷まで一貫して対応可能です。</p>
+  </div></div>
+    <ul class="adv-grid" data-stagger>
+      <li><a class="adv-card" href="advantage.html#total-solution">
+        <div class="adv-card__img"><img src="assets/img/photo/home-total.webp" width="360" height="220" alt="トータルソリューション" loading="lazy" decoding="async"></div>
+        <div class="adv-card__body"><p class="adv-card__num">ADVANTAGE 01</p><h3 class="adv-card__title">トータルソリューション</h3><p class="adv-card__text">設計・開発 → 製造 → 塗装 → 検査 → 出荷。多種多様なご依頼に社内一貫で対応し、短納期・低コストの課題を克服します。</p><span class="adv-card__more">READ MORE <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </a></li><li><a class="adv-card" href="advantage.html#craftsmanship">
+        <div class="adv-card__img"><img src="assets/img/photo/home-craft.webp" width="360" height="220" alt="職人の技・若手の活躍" loading="lazy" decoding="async"></div>
+        <div class="adv-card__body"><p class="adv-card__num">ADVANTAGE 02</p><h3 class="adv-card__title">職人の技・若手の活躍</h3><p class="adv-card__text">長年培ってきた技術やノウハウを留めず、ベテラン社員から若手社員へ。複数工程を受け持てる多能工を育てています。</p><span class="adv-card__more">READ MORE <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </a></li><li><a class="adv-card" href="advantage.html#quality">
+        <div class="adv-card__img"><img src="assets/img/photo/home-quality.webp" width="360" height="220" alt="品質と環境への取り組み" loading="lazy" decoding="async"></div>
+        <div class="adv-card__body"><p class="adv-card__num">ADVANTAGE 03</p><h3 class="adv-card__title">品質と環境への取り組み</h3><p class="adv-card__text">品質マネジメント ISO9001、環境マネジメント ISO14001 を認証取得。国際規格に基づいた品質保証と環境配慮を継続しています。</p><span class="adv-card__more">READ MORE <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== PROCESS (WebGL) ===== -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="process__pin">
+    <div class="process__canvas" id="process-canvas" aria-hidden="true"></div>
+    <div class="process__fallback" aria-hidden="true"><img src="assets/img/hero/laser-1920.webp" srcset="assets/img/hero/laser-1920.webp 1920w, assets/img/hero/laser-1280.webp 1280w, assets/img/hero/laser-768.webp 768w" sizes="100vw" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+    <div class="container process__ui">
+      <div class="process__head">
+        <p class="eyebrow"><span class="eyebrow__num">02</span><span class="eyebrow__en">PROCESS</span></p>
+        <h2 class="sec-title" id="process-title" style="font-size:clamp(22px,2.6vw,34px)">一枚の板が、製品になるまで。<span class="small" style="display:block;font-weight:500;margin-top:6px;font-size:13px;color:var(--steel)">設計から出荷まで、社内一貫の6工程</span></h2>
+      </div>
+      <div class="process__steps" aria-live="polite">
+        <div class="process__step is-active" data-step="0">
+          <p class="process__step-num" aria-hidden="true">01</p>
+          <p class="process__step-en">DESIGN</p>
+          <h3 class="process__step-title">設計・開発</h3>
+          <p class="process__step-text">お客様のご要望をもとに、CADで設計図面を作成。図面はもちろん、手描きのイラストやデザイン画からの試作にも対応します。</p>
+        </div><div class="process__step" data-step="1">
+          <p class="process__step-num" aria-hidden="true">02</p>
+          <p class="process__step-en">LASER CUT</p>
+          <h3 class="process__step-title">レーザー・板金加工</h3>
+          <p class="process__step-text">複合機・NCタレパン加工機を保有。鉄 0.6〜6.0mm、ステンレス 0.5〜6.0mm、アルミ 0.8〜6.0mm（4×8サイズ迄）の板材を精密に切り抜きます。</p>
+        </div><div class="process__step" data-step="2">
+          <p class="process__step-num" aria-hidden="true">03</p>
+          <p class="process__step-en">PUNCH</p>
+          <h3 class="process__step-title">抜き・穴あけ</h3>
+          <p class="process__step-text">CNCターレットパンチプレス（30t／20t、サイクルローダー付）で、通気孔やスロットを高速・高精度に打ち抜きます。</p>
+        </div><div class="process__step" data-step="3">
+          <p class="process__step-num" aria-hidden="true">04</p>
+          <p class="process__step-en">BEND</p>
+          <h3 class="process__step-title">曲げ加工</h3>
+          <p class="process__step-text">300t 油圧式をはじめ NCバックゲージ付プレスブレーキ 8台。一枚の板が、寸法どおりの箱物へと立ち上がります。</p>
+        </div><div class="process__step" data-step="4">
+          <p class="process__step-num" aria-hidden="true">05</p>
+          <p class="process__step-en">WELD</p>
+          <h3 class="process__step-title">溶接</h3>
+          <p class="process__step-text">6軸関節形アーク溶接ロボット 4台による自動化ラインに加え、スポット・アルゴン・アーク溶接を素材と用途で使い分け、強度と美しさを両立します。</p>
+        </div><div class="process__step" data-step="5">
+          <p class="process__step-num" aria-hidden="true">06</p>
+          <p class="process__step-en">ASSEMBLE & INSPECT</p>
+          <h3 class="process__step-title">組立・検査・出荷</h3>
+          <p class="process__step-text">箱物板金製品の組立も全て社内で。きめ細かい徹底したチェックを経て、自信をもってお届けします。塗装・梱包・出荷まで一貫対応。</p>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <div class="process__progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="process__hint" aria-hidden="true">SCROLL TO FORM</p>
+  </div>
+  <noscript><p class="container note" style="padding:24px 0">※ この工程アニメーションの表示には JavaScript が必要です。</p></noscript>
+</section>
+
+<!-- ===== TECHNOLOGY ===== -->
+<section class="section section--light section--grid" id="technology" aria-labelledby="tech-title">
+  <div class="container">
+    <div class="reveal"><div class="sec-head sec-head--light sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">03</span><span class="eyebrow__en">TECHNOLOGY</span></p>
+    <h2 class="sec-title" id="tech-title">金属板金加工、溶接、組立・検査。<br>すべてを自社で。</h2>
+    
+  </div></div>
+    <ul class="tech-grid" data-stagger>
+      <li><article class="tech-card">
+        <div class="tech-card__img"><img src="assets/img/photo/home-sheet.webp" width="310" height="200" alt="金属板金加工" loading="lazy" decoding="async"></div>
+        <div class="tech-card__body"><h3 class="tech-card__title">金属板金加工<small>SHEET METAL</small></h3><p class="tech-card__text">複合機、NCタレパン加工機、NCベンダー機等を保有しており、特にレーザー加工においては、豊富な技術とノウハウを有しています。金属板金加工のことなら、長村製作所にお任せください！</p><p class="tech-card__more"><a class="link-arrow" href="technology.html#sheet-metal">詳細はこちら <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p></div>
+      </article></li><li><article class="tech-card">
+        <div class="tech-card__img"><img src="assets/img/photo/home-weld.webp" width="310" height="200" alt="各種溶接加工" loading="lazy" decoding="async"></div>
+        <div class="tech-card__body"><h3 class="tech-card__title">各種溶接加工<small>WELDING</small></h3><p class="tech-card__text">長村製作所では、鉄、ステンレス、アルミなど、素材と用途に合わせて溶接方法の調整等を行い、強度のある美しい製品を製作します。弊社の強み・特徴でもある大型製品の溶接は、強度を十分に保つことを考慮しながら、美しく仕上げます。</p><p class="tech-card__more"><a class="link-arrow" href="technology.html#welding">詳細はこちら <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p></div>
+      </article></li><li><article class="tech-card">
+        <div class="tech-card__img"><img src="assets/img/photo/home-assembly.webp" width="310" height="200" alt="組立・検査" loading="lazy" decoding="async"></div>
+        <div class="tech-card__body"><h3 class="tech-card__title">組立・検査<small>ASSEMBLY & INSPECTION</small></h3><p class="tech-card__text">長村製作所では、箱物板金製品の組立作業も全て社内で行っています。品質検査については、弊社の女性スタッフが、女性ならではのきめ細かい徹底したチェックを行っています。厳しい目で品質のチェックを行ったのち、自信をもってお客様に製品をお届けいたします。</p><p class="tech-card__more"><a class="link-arrow" href="technology.html#assembly">詳細はこちら <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p></div>
+      </article></li>
+    </ul>
+    <div class="flex mt-5 reveal" style="justify-content:center;gap:16px">
+      <a class="btn btn--dark" href="equipment.html" ><span>設備概要を見る</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--dark" href="faq.html" ><span>よくある質問</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NUMBERS ===== -->
+<section class="section section--dark-2" id="numbers" aria-labelledby="num-title">
+  <div class="container">
+    <div class="reveal"><div class="sec-head sec-head--dark sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">04</span><span class="eyebrow__en">IN NUMBERS</span></p>
+    <h2 class="sec-title" id="num-title">数字で見る長村製作所</h2>
+    
+  </div></div>
+    <ul class="numbers" data-stagger>
+      <li class="num"><span class="num__label">Founded</span><span class="num__value"><span class="js-counter js-years" data-count="88">88</span><small>年の歩み</small></span><span class="num__ja">1938年（昭和13年）創業</span><span class="num__note">創業100年に向けて、通信インフラと空間創造の2事業を軸に。</span></li>
+      <li class="num"><span class="num__label">Employees</span><span class="num__value"><span class="js-counter" data-count="58">58</span><small>名</small></span><span class="num__ja">社員数（2026年1月時点）</span><span class="num__note">ベテランから若手への技術継承を進めています。</span></li>
+      <li class="num"><span class="num__label">Phone booth makers in Japan</span><span class="num__value">国内<span class="js-counter" data-count="2">2</span><small>社のみ</small></span><span class="num__ja">公衆電話BOXを製造する会社数</span><span class="num__note">NTTグループの厳しい品質管理基準に対応し、東日本エリアの電話BOXを支えています。</span></li>
+      <li class="num"><span class="num__label">Welding robots</span><span class="num__value"><span class="js-counter" data-count="4">4</span><small>台</small></span><span class="num__ja">6軸関節形アーク溶接ロボット</span><span class="num__note">CO2半自動溶接機 19台、アルゴンアーク溶接機 5台と併用し安定供給を実現。</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="section section--light" id="products" aria-labelledby="prod-title">
+  <div class="container">
+    <div class="reveal"><div class="sec-head sec-head--light sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">05</span><span class="eyebrow__en">PRODUCTS</span></p>
+    <h2 class="sec-title" id="prod-title">通信インフラを支える製品から、<br>快適な空間をつくる製品まで。</h2>
+    <p class="sec-lead">各種光配線盤等、19インチラック、屋外用公衆電話室、喫煙BOX、樋門ハウス等の公共製品、大型精密板金製品の設計・製造・販売を行っています。</p>
+  </div></div>
+    <ul class="prod-strip" data-stagger>
+      <li><a class="prod-tile" href="products.html#panels"><div class="prod-tile__img"><img src="assets/img/products/panel-2.webp" width="477" height="500" alt="各種配線盤類" loading="lazy" decoding="async"></div><span class="prod-tile__en">WIRING PANELS</span><span class="prod-tile__name">各種配線盤類</span></a></li><li><a class="prod-tile" href="products.html#racks"><div class="prod-tile__img"><img src="assets/img/products/rack-2.webp" width="516" height="500" alt="19インチラック" loading="lazy" decoding="async"></div><span class="prod-tile__en">19-INCH RACKS</span><span class="prod-tile__name">19インチラック</span></a></li><li><a class="prod-tile" href="products.html#phone-booth"><div class="prod-tile__img"><img src="assets/img/products/booth-2.webp" width="667" height="500" alt="屋外公衆電話室" loading="lazy" decoding="async"></div><span class="prod-tile__en">PHONE BOOTH</span><span class="prod-tile__name">屋外公衆電話室</span></a></li><li><a class="prod-tile" href="products.html#public"><div class="prod-tile__img"><img src="assets/img/products/public-6.webp" width="667" height="500" alt="公共製品" loading="lazy" decoding="async"></div><span class="prod-tile__en">PUBLIC PRODUCTS</span><span class="prod-tile__name">公共製品</span></a></li><li><a class="prod-tile" href="products.html#others"><div class="prod-tile__img"><img src="assets/img/products/other-1.webp" width="665" height="500" alt="その他" loading="lazy" decoding="async"></div><span class="prod-tile__en">OTHERS</span><span class="prod-tile__name">その他</span></a></li>
+    </ul>
+    <div class="mt-6 reveal">
+      <p class="eyebrow" style="color:var(--text-2)"><span class="eyebrow__en">ORIGINAL BRANDS</span></p>
+      <h3 class="sec-title" style="font-size:clamp(22px,2.6vw,32px);color:var(--text)">電話ボックスの技術から生まれた、3つの空間ブランド</h3>
+    </div>
+    <ul class="brand-grid mt-4" data-stagger>
+      <li><a class="brand-tile" href="smox.html"><div class="brand-tile__img"><img src="assets/img/brands/smox/fea-1.webp" width="380" height="430" alt="SMOX" loading="lazy" decoding="async"></div><div class="brand-tile__body"><p class="brand-tile__cat">喫煙ブース・喫煙ボックス</p><p class="brand-tile__name">SMOX</p><p class="brand-tile__desc">厚生労働省の技術的基準をクリア。屋内にも屋外にも対応した強固な設計、15秒で空気を入れ替える換気性能。</p><span class="brand-tile__more">VIEW BRAND <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a></li><li><a class="brand-tile" href="kovako.html"><div class="brand-tile__img"><img src="assets/img/brands/kovako/booth-1000.webp" srcset="assets/img/brands/kovako/booth-1000.webp 1000w, assets/img/brands/kovako/booth-640.webp 640w" sizes="(min-width: 900px) 33vw, 100vw" width="1000" height="650" alt="KOVAKO" loading="lazy" decoding="async"></div><div class="brand-tile__body"><p class="brand-tile__cat">ファクトリーブース</p><p class="brand-tile__name">KOVAKO</p><p class="brand-tile__desc">従業員を守る安心・安全のファクトリーブース。防災防塵に最適、最短1日で工事完了、完全オーダーメイド制。</p><span class="brand-tile__more">VIEW BRAND <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a></li><li><a class="brand-tile" href="monobo.html"><div class="brand-tile__img"><img src="assets/img/brands/monobo/case-main.webp" width="684" height="577" alt="Monobo" loading="lazy" decoding="async"></div><div class="brand-tile__body"><p class="brand-tile__cat">テレワークブース</p><p class="brand-tile__name">Monobo</p><p class="brand-tile__desc">低天井OK、場所を選ばずフィットする個室ブース。設置可能な最低天井高 2100mm、最短2時間で設置可能。</p><span class="brand-tile__more">VIEW BRAND <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== NEWS & BLOG ===== -->
+<section class="section section--dark section--grid" id="news" aria-labelledby="news-title">
+  <div class="container">
+    <div class="home-news">
+      <div class="reveal">
+        <div class="sec-head sec-head--dark sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">06</span><span class="eyebrow__en">NEWS</span></p>
+    <h2 class="sec-title" id="news-title">新着情報</h2>
+    
+  </div>
+        <div class="news-list">
+          <a class="news-item" href="news.html"><time datetime="2019-07-19">2019.07.19</time><span class="news-item__title">ホームページをリニューアルいたしました。</span><span class="news-item__tag">INFO</span></a>
+        </div>
+        <p class="mt-4"><a class="btn btn--line btn--sm" href="news.html" ><span>もっと見る</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+      <div class="reveal">
+        <div class="sec-head sec-head--dark sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num"></span><span class="eyebrow__en">PRESIDENT BLOG</span></p>
+    <h2 class="sec-title">飯山社長のものづくりブログ</h2>
+    <p class="sec-lead">ほぼ毎日更新。ものづくりの現場から、経営者の視点で綴る 895 本超のエッセイ。</p>
+  </div>
+        <div class="news-list" data-latest="assets/data/blog.json" data-n="5"><p class="note">最新記事を読み込み中…</p></div>
+        <div class="flex mt-4"><a class="btn btn--line btn--sm" href="blog.html" ><span>社長ブログ 記事一覧</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn--line btn--sm" href="blog-cio.html" ><span>ITブログ</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPANY ===== -->
+<section class="section section--light" id="company" aria-labelledby="company-title">
+  <div class="container home-company">
+    <div class="home-company__img img-reveal"><img src="assets/img/photo/building.webp" width="361" height="222" alt="株式会社長村製作所 本社工場 外観" loading="lazy" decoding="async"></div>
+    <div class="reveal">
+      <div class="sec-head sec-head--light sec-head--left">
+    <p class="eyebrow"><span class="eyebrow__num">07</span><span class="eyebrow__en">COMPANY PROFILE</span></p>
+    <h2 class="sec-title" id="company-title">会社概要</h2>
+    
+  </div>
+      <dl class="info-list">
+        <div><dt>商号</dt><dd>株式会社 長村製作所</dd></div>
+        <div><dt>本社工場</dt><dd>〒329-4411 栃木県栃木市大平町横堀みずほ5-1<br>TEL：0282(45)1341　FAX：0282(45)1508</dd></div>
+        <div><dt>東京本部</dt><dd>〒170-0013 東京都豊島区東池袋1‐21‐11 オーク池袋ビル5F</dd></div>
+        <div><dt>設立</dt><dd>1938年5月5日</dd></div>
+        <div><dt>代表者</dt><dd>代表取締役 飯山 進</dd></div>
+        <div><dt>認証</dt><dd>ISO9001（1998年07月取得）／ISO14001（2001年02月取得）</dd></div>
+      </dl>
+      <div class="flex mt-4"><a class="btn btn--dark" href="company.html" ><span>会社概要・沿革・アクセス</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn--dark" href="management.html" ><span>経営方針</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECRUIT ===== -->
+<section class="recruit-banner" id="recruit-cta" aria-labelledby="recruit-title">
+  <div class="recruit-banner__img"><img src="assets/img/recruit/about-1-1060.webp" srcset="assets/img/recruit/about-1-1060.webp 1060w, assets/img/recruit/about-1-640.webp 640w" sizes="100vw" width="1060" height="708" alt="長村製作所の社員たち" data-parallax="8" loading="lazy" decoding="async"></div>
+  <div class="container recruit-banner__inner reveal">
+    <p class="eyebrow"><span class="eyebrow__num">08</span><span class="eyebrow__en">RECRUITMENT</span></p>
+    <h2 class="recruit-banner__title" id="recruit-title">“ありがとう”を道しるべに、<br>未来を創りつづける。</h2>
+    <p class="recruit-banner__lead">当社の経営理念に共感し、未来のモノづくりを共に創っていく仲間を待っています。新卒採用・キャリア採用の情報はこちらから。</p>
+    <div class="recruit-banner__stats" aria-label="働く環境の数字">
+      <div><b>127<small>日</small></b><span>年間休日数</span></div>
+      <div><b>76.7<small>%</small></b><span>有給休暇平均取得率</span></div>
+      <div><b>5.08<small>時間</small></b><span>月平均残業時間</span></div>
+      <div><b>100<small>%</small></b><span>育児休業取得率・復職率</span></div>
+    </div>
+    <p class="mt-4"><a class="btn btn--gold btn--lg" href="recruit.html" ><span>採用情報を見る</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="cta cta--dark" aria-labelledby="cta-title">
+    <div class="container cta__inner">
+      <div class="cta__text">
+        <p class="eyebrow"><span class="eyebrow__en">CONTACT</span></p>
+        <h2 id="cta-title" class="cta__title">図面一枚、手描きのスケッチからでも。<br>まずはご相談ください。</h2>
+        <p class="cta__lead">試作1点から量産まで、短納期のご相談も歓迎します。他社で断られた案件もお気軽にどうぞ。</p>
+      </div>
+      <div class="cta__actions">
+        <a class="tel-card" href="tel:0282451341"><span class="tel-card__label">お電話でのお問合せ</span><span class="tel-card__num">0282-45-1341</span><span class="tel-card__note">受付時間 8:25〜17:00（平日）</span></a>
+        <a class="btn btn--gold btn--lg" href="contact.html"><span>お問合せフォーム</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
 </main>
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="assets/img/brand/logo-white.png" width="409" height="104" alt="株式会社長村製作所" class="site-footer__logo" loading="lazy" decoding="async">
+      <p class="site-footer__tag">HIGH TECHNOLOGY &amp; HIGH QUALITY<br>精密板金加工の一貫体制</p>
+      <address class="site-footer__addr">
+        <p>〒329-4411　栃木県栃木市大平町横堀みずほ5-1</p>
+        <p>TEL：<a href="tel:0282451341">0282(45)1341</a>　FAX：0282(45)1508</p>
+        <p class="site-footer__hours">受付時間 8:25〜17:00（平日）</p>
+      </address>
+    </div>
+    <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="advantage.html">長村製作所の強み</a></li>
+        <li><a href="technology.html">技術情報</a></li>
+        <li><a href="equipment.html">設備概要</a></li>
+        <li><a href="products.html">製品紹介</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+      </ul>
+      <ul>
+        <li><a href="company.html">会社概要</a>
+          <ul>
+            <li><a href="company.html#message">代表挨拶</a></li>
+            <li><a href="company.html#profile">会社基本情報</a></li>
+            <li><a href="company.html#history">会社沿革</a></li>
+            <li><a href="company.html#access">アクセス</a></li>
+          </ul>
+        </li>
+        <li><a href="management.html">経営方針</a></li>
+        <li><a href="news.html">新着情報</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+      </ul>
+      <ul>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="blog.html">社長ブログ</a></li>
+        <li><a href="blog-cio.html">ITブログ</a></li>
+        <li><a href="sitemap.html">サイトマップ</a></li>
+        <li><a href="management.html#privacy">個人情報保護方針</a></li>
+      </ul>
+      <ul class="site-footer__brands">
+        <li><a href="smox.html"><span class="site-footer__brand-en">SMOX</span>喫煙ブース</a></li>
+        <li><a href="kovako.html"><span class="site-footer__brand-en">KOVAKO</span>ファクトリーブース</a></li>
+        <li><a href="monobo.html"><span class="site-footer__brand-en">Monobo</span>テレワークブース</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="site-footer__bottom">
+    <div class="container site-footer__bottom-inner">
+      <small>Copyright &copy; Nagamura Manufacturing Co. All Rights Reserved.</small>
+      <a class="to-top" href="#top" aria-label="ページの先頭へ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+    </div>
+  </div>
+</footer>
+<div class="mobile-bar" aria-label="お問い合わせ（モバイル）">
+  <a href="tel:0282451341" class="mobile-bar__tel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg><span>0282-45-1341</span></a>
+  <a href="contact.html" class="mobile-bar__contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg><span>お問い合わせ</span></a>
+</div>
+<script src="assets/vendor/gsap/gsap.min.js" defer></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script type="module" src="assets/js/process3d.js"></script>
 </body>
 </html>

@@ -1,0 +1,870 @@
+{
+ "hero/welding": {
+  "sizes": [
+   [
+    1920,
+    1080
+   ],
+   [
+    1280,
+    720
+   ],
+   [
+    768,
+    432
+   ]
+  ],
+  "w": 1920,
+  "h": 1080
+ },
+ "hero/laser": {
+  "sizes": [
+   [
+    1920,
+    1080
+   ],
+   [
+    1280,
+    720
+   ],
+   [
+    768,
+    432
+   ]
+  ],
+  "w": 1920,
+  "h": 1080
+ },
+ "hero/assembly": {
+  "sizes": [
+   [
+    1920,
+    1080
+   ],
+   [
+    1280,
+    720
+   ],
+   [
+    768,
+    432
+   ]
+  ],
+  "w": 1920,
+  "h": 1080
+ },
+ "hero/factory": {
+  "sizes": [
+   [
+    1920,
+    1080
+   ],
+   [
+    1280,
+    720
+   ],
+   [
+    768,
+    432
+   ]
+  ],
+  "w": 1920,
+  "h": 1080
+ },
+ "photo/home-total": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/home-craft": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/home-quality": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/home-sheet": {
+  "w": 310,
+  "h": 200
+ },
+ "photo/home-weld": {
+  "w": 310,
+  "h": 200
+ },
+ "photo/home-assembly": {
+  "w": 310,
+  "h": 200
+ },
+ "photo/building": {
+  "w": 361,
+  "h": 222
+ },
+ "photo/adv-factory": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/adv-meeting-1": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/adv-meeting-2": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/flow-1": {
+  "w": 193,
+  "h": 193
+ },
+ "photo/flow-2": {
+  "w": 193,
+  "h": 193
+ },
+ "photo/flow-3": {
+  "w": 193,
+  "h": 193
+ },
+ "photo/flow-4": {
+  "w": 193,
+  "h": 193
+ },
+ "photo/flow-5": {
+  "w": 193,
+  "h": 193
+ },
+ "doc/iso-policy": {
+  "sizes": [
+   [
+    724,
+    1024
+   ],
+   [
+    400,
+    566
+   ]
+  ],
+  "w": 724,
+  "h": 1024
+ },
+ "doc/iso-9001": {
+  "sizes": [
+   [
+    724,
+    1024
+   ],
+   [
+    400,
+    566
+   ]
+  ],
+  "w": 724,
+  "h": 1024
+ },
+ "doc/iso-14001": {
+  "sizes": [
+   [
+    724,
+    1024
+   ],
+   [
+    400,
+    566
+   ]
+  ],
+  "w": 724,
+  "h": 1024
+ },
+ "photo/tech-01": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-02": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-03": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-04": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-05": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-06": {
+  "w": 360,
+  "h": 220
+ },
+ "photo/tech-07": {
+  "w": 400,
+  "h": 394
+ },
+ "photo/tech-08": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/tech-09": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/tech-10": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/tech-11": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/tech-12": {
+  "w": 540,
+  "h": 320
+ },
+ "photo/eq-press-1": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-2": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-3": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-4": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-5": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-6": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-7": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-press-8": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-bend-1": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-bend-2": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-bend-3": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-mach-1": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-mach-2": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-cut-1": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-cut-2": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-weld-1": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-weld-2": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-weld-3": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/eq-weld-4": {
+  "w": 260,
+  "h": 200
+ },
+ "photo/factory-wide": {
+  "sizes": [
+   [
+    1000,
+    667
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1000,
+  "h": 667
+ },
+ "photo/team": {
+  "sizes": [
+   [
+    1000,
+    667
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1000,
+  "h": 667
+ },
+ "photo/president": {
+  "w": 330,
+  "h": 400
+ },
+ "products/panel-1": {
+  "w": 224,
+  "h": 500
+ },
+ "products/panel-2": {
+  "w": 477,
+  "h": 500
+ },
+ "products/panel-3": {
+  "w": 251,
+  "h": 500
+ },
+ "products/panel-4": {
+  "w": 667,
+  "h": 500
+ },
+ "products/rack-1": {
+  "w": 359,
+  "h": 500
+ },
+ "products/rack-2": {
+  "w": 516,
+  "h": 500
+ },
+ "products/rack-3": {
+  "w": 243,
+  "h": 500
+ },
+ "products/rack-4": {
+  "w": 231,
+  "h": 500
+ },
+ "products/rack-5": {
+  "w": 230,
+  "h": 500
+ },
+ "products/rack-r04-1": {
+  "w": 407,
+  "h": 1000
+ },
+ "products/rack-r04-2": {
+  "w": 360,
+  "h": 260
+ },
+ "products/rack-r04-3": {
+  "w": 360,
+  "h": 260
+ },
+ "products/rack-r04-4": {
+  "w": 360,
+  "h": 260
+ },
+ "products/rack-r04-5": {
+  "w": 360,
+  "h": 260
+ },
+ "products/booth-1": {
+  "w": 361,
+  "h": 500
+ },
+ "products/booth-2": {
+  "w": 667,
+  "h": 500
+ },
+ "products/public-1": {
+  "w": 281,
+  "h": 500
+ },
+ "products/public-2": {
+  "w": 667,
+  "h": 500
+ },
+ "products/public-3": {
+  "w": 375,
+  "h": 500
+ },
+ "products/public-4": {
+  "w": 281,
+  "h": 500
+ },
+ "products/public-5": {
+  "w": 889,
+  "h": 500
+ },
+ "products/public-6": {
+  "w": 667,
+  "h": 500
+ },
+ "products/other-1": {
+  "w": 665,
+  "h": 500
+ },
+ "products/other-2": {
+  "w": 455,
+  "h": 500
+ },
+ "recruit/hero": {
+  "sizes": [
+   [
+    1500,
+    1000
+   ],
+   [
+    1000,
+    667
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1500,
+  "h": 1000
+ },
+ "recruit/about-1": {
+  "sizes": [
+   [
+    1060,
+    708
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1060,
+  "h": 708
+ },
+ "recruit/about-2": {
+  "sizes": [
+   [
+    1066,
+    710
+   ],
+   [
+    640,
+    426
+   ]
+  ],
+  "w": 1066,
+  "h": 710
+ },
+ "recruit/president": {
+  "sizes": [
+   [
+    878,
+    968
+   ],
+   [
+    520,
+    573
+   ]
+  ],
+  "w": 878,
+  "h": 968
+ },
+ "recruit/job-design": {
+  "sizes": [
+   [
+    1200,
+    800
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1200,
+  "h": 800
+ },
+ "recruit/job-metal": {
+  "sizes": [
+   [
+    1200,
+    800
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1200,
+  "h": 800
+ },
+ "recruit/job-welding": {
+  "sizes": [
+   [
+    1200,
+    800
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1200,
+  "h": 800
+ },
+ "recruit/job-assembly": {
+  "sizes": [
+   [
+    1200,
+    800
+   ],
+   [
+    640,
+    427
+   ]
+  ],
+  "w": 1200,
+  "h": 800
+ },
+ "brands/smox/fea-1": {
+  "w": 380,
+  "h": 430
+ },
+ "brands/smox/fea-2": {
+  "w": 380,
+  "h": 430
+ },
+ "brands/smox/clear": {
+  "w": 864,
+  "h": 654
+ },
+ "brands/smox/mv": {
+  "w": 521,
+  "h": 684
+ },
+ "brands/smox/lineup-1": {
+  "w": 128,
+  "h": 251
+ },
+ "brands/smox/lineup-2": {
+  "w": 248,
+  "h": 251
+ },
+ "brands/smox/lineup-3": {
+  "w": 294,
+  "h": 251
+ },
+ "brands/smox/case-1": {
+  "w": 300,
+  "h": 416
+ },
+ "brands/smox/option": {
+  "w": 500,
+  "h": 685
+ },
+ "brands/smox/dev-thumb": {
+  "w": 541,
+  "h": 366
+ },
+ "brands/smox/cond-1": {
+  "w": 380,
+  "h": 430
+ },
+ "brands/smox/cond-2": {
+  "w": 380,
+  "h": 430
+ },
+ "brands/smox/logo.svg": {
+  "copied": true
+ },
+ "brands/smox/booth_ico_1.svg": {
+  "copied": true
+ },
+ "brands/smox/booth_ico_2.svg": {
+  "copied": true
+ },
+ "brands/smox/booth_ico_3.svg": {
+  "copied": true
+ },
+ "brands/smox/booth_ico_4.svg": {
+  "copied": true
+ },
+ "brands/smox/booth_ico_5.svg": {
+  "copied": true
+ },
+ "brands/kovako/booth": {
+  "sizes": [
+   [
+    1000,
+    650
+   ],
+   [
+    640,
+    416
+   ]
+  ],
+  "w": 1000,
+  "h": 650
+ },
+ "brands/kovako/feat-1": {
+  "w": 370,
+  "h": 540
+ },
+ "brands/kovako/feat-2": {
+  "w": 370,
+  "h": 500
+ },
+ "brands/kovako/feat-3": {
+  "w": 370,
+  "h": 580
+ },
+ "brands/kovako/feat-4": {
+  "w": 370,
+  "h": 550
+ },
+ "brands/kovako/feat-5": {
+  "w": 370,
+  "h": 570
+ },
+ "brands/kovako/feat-6": {
+  "w": 370,
+  "h": 550
+ },
+ "brands/kovako/conditions": {
+  "w": 680,
+  "h": 487
+ },
+ "brands/kovako/flow-1": {
+  "w": 750,
+  "h": 460
+ },
+ "brands/kovako/flow-2": {
+  "w": 750,
+  "h": 460
+ },
+ "brands/kovako/flow-3": {
+  "w": 750,
+  "h": 460
+ },
+ "brands/kovako/flow-4": {
+  "w": 750,
+  "h": 460
+ },
+ "brands/kovako/recommend-1": {
+  "w": 370,
+  "h": 500
+ },
+ "brands/kovako/recommend-2": {
+  "w": 370,
+  "h": 500
+ },
+ "brands/kovako/logo": {
+  "w": 500,
+  "h": 456
+ },
+ "brands/kovako/logo-white.svg": {
+  "copied": true
+ },
+ "brands/kovako/booth-diagram.svg": {
+  "copied": true
+ },
+ "brands/monobo/fv": {
+  "sizes": [
+   [
+    1440,
+    651
+   ],
+   [
+    900,
+    407
+   ]
+  ],
+  "w": 1440,
+  "h": 651
+ },
+ "brands/monobo/case-main": {
+  "w": 684,
+  "h": 577
+ },
+ "brands/monobo/lineup-1": {
+  "w": 357,
+  "h": 451
+ },
+ "brands/monobo/lineup-2": {
+  "w": 664,
+  "h": 714
+ },
+ "brands/monobo/lineup-4": {
+  "w": 395,
+  "h": 436
+ },
+ "brands/monobo/feat-1": {
+  "sizes": [
+   [
+    900,
+    524
+   ]
+  ],
+  "w": 900,
+  "h": 524
+ },
+ "brands/monobo/feat-2": {
+  "sizes": [
+   [
+    900,
+    524
+   ]
+  ],
+  "w": 900,
+  "h": 524
+ },
+ "brands/monobo/feat-3": {
+  "sizes": [
+   [
+    900,
+    524
+   ]
+  ],
+  "w": 900,
+  "h": 524
+ },
+ "brands/monobo/feat-4": {
+  "sizes": [
+   [
+    900,
+    524
+   ]
+  ],
+  "w": 900,
+  "h": 524
+ },
+ "brands/monobo/cta": {
+  "sizes": [
+   [
+    700,
+    884
+   ]
+  ],
+  "w": 700,
+  "h": 884
+ },
+ "brands/monobo/case-2p": {
+  "sizes": [
+   [
+    700,
+    1017
+   ]
+  ],
+  "w": 700,
+  "h": 1017
+ },
+ "brands/monobo/expo-2026": {
+  "sizes": [
+   [
+    700,
+    680
+   ]
+  ],
+  "w": 700,
+  "h": 680
+ },
+ "brands/monobo/purchase": {
+  "w": 676,
+  "h": 572
+ },
+ "brands/monobo/logo": {
+  "w": 435,
+  "h": 111
+ },
+ "brands/monobo/logo-mark": {
+  "w": 1124,
+  "h": 187
+ },
+ "brands/monobo/equip-std-1": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-opt-1": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-std-2": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-opt-2": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-std-3": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-opt-3": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-std-4": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-opt-4": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-std-5": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/equip-opt-5": {
+  "w": 348,
+  "h": 246
+ },
+ "brands/monobo/flow-1": {
+  "w": 183,
+  "h": 235
+ },
+ "brands/monobo/issue-1": {
+  "w": 442,
+  "h": 442
+ },
+ "brands/monobo/flow-2": {
+  "w": 148,
+  "h": 206
+ },
+ "brands/monobo/issue-2": {
+  "w": 442,
+  "h": 442
+ },
+ "brands/monobo/flow-3": {
+  "w": 192,
+  "h": 202
+ },
+ "brands/monobo/issue-3": {
+  "w": 442,
+  "h": 442
+ },
+ "brands/monobo/flow-4": {
+  "w": 246,
+  "h": 186
+ },
+ "brands/monobo/issue-4": {
+  "w": 442,
+  "h": 442
+ }
+}
