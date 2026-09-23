@@ -168,7 +168,7 @@ const body = `
       <div class="reveal">
         ${heading({ num: '', en: 'PRESIDENT BLOG', ja: '飯山社長のものづくりブログ', lead: 'ほぼ毎日更新。ものづくりの現場から、経営者の視点で綴る 895 本超のエッセイ。' })}
         <div class="news-list" data-latest="assets/data/blog.json" data-n="5"><p class="note">最新記事を読み込み中…</p></div>
-        <div class="flex mt-4">${btn('blog.html', '社長ブログ 記事一覧', 'btn--line btn--sm')}${btn('blog-cio.html', 'ITブログ', 'btn--line btn--sm')}</div>
+        <p class="mt-4">${btn('blog.html', '社長ブログ 記事一覧', 'btn--line btn--sm')}</p>
       </div>
     </div>
   </div>

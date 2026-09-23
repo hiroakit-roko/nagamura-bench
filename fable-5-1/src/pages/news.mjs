@@ -12,8 +12,8 @@ ${pageHero({ en: 'NEWS', ja: '新着情報', image: 'hero/factory', crumbs: [{ l
       <p>今後も、内容の充実を図るとともに、情報をわかりやすく発信して参りますので、何卒よろしくお願い申し上げます。</p>
     </article>
     <div class="divider"></div>
-    <div class="reveal">${heading({ en: 'MORE UPDATES', ja: '最新の情報はブログでも', lead: '日々の更新は社長ブログ・ITブログ、製品ブランドのお知らせ（Monobo）でご覧いただけます。' })}
-      <div class="flex"><a class="btn btn--line btn--sm" href="blog.html"><span>社長ブログ</span></a><a class="btn btn--line btn--sm" href="blog-cio.html"><span>ITブログ</span></a><a class="btn btn--line btn--sm" href="monobo.html#news"><span>Monobo お知らせ</span></a></div></div>
+    <div class="reveal">${heading({ en: 'MORE UPDATES', ja: '最新の情報はブログでも', lead: '日々の更新は社長ブログ、製品ブランドのお知らせ（Monobo）でご覧いただけます。' })}
+      <div class="flex"><a class="btn btn--line btn--sm" href="blog.html"><span>社長ブログ</span></a><a class="btn btn--line btn--sm" href="monobo.html#news"><span>Monobo お知らせ</span></a></div></div>
   </div>
 </section>
 ${cta()}

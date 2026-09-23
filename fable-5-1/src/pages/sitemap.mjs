@@ -19,7 +19,6 @@ ${pageHero({ en: 'SITEMAP', ja: 'サイトマップ', crumbs: [{ label: 'サイ�
     </ul></div>
     <div><h2>Blog &amp; Contact</h2><ul>
       <li><a href="blog.html">社長ブログ</a></li>
-      <li><a href="blog-cio.html">ITブログ</a></li>
       <li><a href="contact.html">お問い合わせ</a></li>
       <li><a href="management.html#privacy">個人情報保護方針</a></li>
       <li><a href="sitemap.html">サイトマップ</a></li>

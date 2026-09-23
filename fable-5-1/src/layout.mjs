@@ -16,12 +16,9 @@ export const NAV = [
     ['kovako.html', 'KOVAKO（ファクトリーブース）', 'KOVAKO'],
     ['monobo.html', 'Monobo（テレワークブース）', 'MONOBO'],
   ]},
-  { label: 'ブログ', children: [
-    ['blog.html', '社長ブログ', 'PRESIDENT BLOG'],
-    ['blog-cio.html', 'ITブログ', 'IT BLOG'],
-  ]},
-  { label: '採用情報', href: 'recruit.html' },
-  { label: 'よくある質問', href: 'faq.html' },
+  { label: '社長ブログ', href: 'blog.html', en: 'BLOG' },
+  { label: '採用情報', href: 'recruit.html', en: 'RECRUIT' },
+  { label: 'よくある質問', href: 'faq.html', en: 'FAQ' },
 ];
 
 const SITE = '株式会社長村製作所';
@@ -41,7 +38,7 @@ function header(active) {
 
   const mobile = NAV.map((n, i) => n.children
     ? `<li class="menu__group"><p class="menu__label">${esc(n.label)}</p><ul>${n.children.map(c => `<li><a href="${c[0]}"><span class="menu__en">${esc(c[2])}</span>${esc(c[1])}</a></li>`).join('')}</ul></li>`
-    : `<li class="menu__group"><a class="menu__single" href="${n.href}"><span class="menu__en">${n.href === 'recruit.html' ? 'RECRUIT' : 'FAQ'}</span>${esc(n.label)}</a></li>`).join('');
+    : `<li class="menu__group"><a class="menu__single" href="${n.href}"><span class="menu__en">${esc(n.en)}</span>${esc(n.label)}</a></li>`).join('');
 
   return `<a class="skip-link" href="#main">本文へスキップ</a>
 <header class="site-header" id="site-header">
@@ -110,7 +107,6 @@ function footer() {
       <ul>
         <li><a href="contact.html">お問い合わせ</a></li>
         <li><a href="blog.html">社長ブログ</a></li>
-        <li><a href="blog-cio.html">ITブログ</a></li>
         <li><a href="sitemap.html">サイトマップ</a></li>
         <li><a href="management.html#privacy">個人情報保護方針</a></li>
       </ul>

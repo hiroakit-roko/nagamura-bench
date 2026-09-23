@@ -1,6 +1,6 @@
 import { chromium } from '/private/tmp/claude-501/-Users-hiroakit-Projects-nagamura-bench-fable-5-1/4f427be2-ba9d-4d9f-b2d9-078f697d1002/scratchpad/tools/node_modules/playwright/index.mjs';
 const BASE = 'http://127.0.0.1:8765/';
-const pages = (process.argv[2] ? process.argv[2].split(',') : ['index','advantage','management','company','technology','equipment','products','smox','kovako','monobo','blog','blog-cio','recruit','faq','contact','news','sitemap']);
+const pages = (process.argv[2] ? process.argv[2].split(',') : ['index','advantage','management','company','technology','equipment','products','smox','kovako','monobo','blog','recruit','faq','contact','news','sitemap']);
 const viewports = { desktop: { width: 1440, height: 900 }, mobile: { width: 390, height: 844 } };
 const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 const report = [];
