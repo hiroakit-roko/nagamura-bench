@@ -25,7 +25,7 @@ export const NAV = [
   { href: 'faq/', label: 'よくある質問', en: 'FAQ' },
 ];
 
-const FONT_URL = 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap';
+const FONT_URL = 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&family=Shippori+Mincho+B1:wght@800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap';
 
 function header(r, current) {
   const isCur = (href) => current && current.startsWith(href) ? ' aria-current="page"' : '';
