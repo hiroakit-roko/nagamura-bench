@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagamura Bench — AI Web Design Benchmark</title>
+<meta name="description" content="株式会社長村製作所サイトのリニューアルを課題に、複数のAIモデルのWebデザイン力・3D表現力を比較するベンチマーク。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d;
+    --panel: #121418;
+    --line: #23262d;
+    --text: #eceef1;
+    --muted: #8b919c;
+    --accent: #ff6a1a;
+    --ok: #3ecf8e;
+    --warn: #f5b93b;
+    --bad: #ff5c5c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Inter, "Noto Sans JP", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+    background:
+      radial-gradient(60vw 40vw at 85% -10%, rgba(255,106,26,.16), transparent 60%),
+      linear-gradient(transparent 0 calc(100% - 1px), rgba(255,255,255,.035) 0) 0 0 / 100% 64px,
+      linear-gradient(90deg, transparent 0 calc(100% - 1px), rgba(255,255,255,.035) 0) 0 0 / 64px 100%;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 88px 0 48px; }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .18em; font-size: 12px; text-transform: uppercase; }
+  h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.05; letter-spacing: -.03em; margin: 16px 0 20px; font-weight: 700; }
+  h1 span { color: var(--muted); }
+  .lead { color: var(--muted); max-width: 720px; line-height: 1.9; font-size: 15px; margin: 0; }
+  .lead a { color: var(--text); }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .chip { border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 12px; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; padding-bottom: 96px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+    display: flex; flex-direction: column; transition: transform .25s ease, border-color .25s ease;
+  }
+  .card:hover { transform: translateY(-4px); border-color: #3a3f49; }
+  .thumb { position: relative; aspect-ratio: 16 / 10; background: #0d0f12; display: block; overflow: hidden; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .6s ease; }
+  .card:hover .thumb img { transform: scale(1.03); }
+  .thumb .ph {
+    position: absolute; inset: 0; display: grid; place-items: center; color: #3a3f49;
+    font-size: 64px; font-weight: 700; letter-spacing: -.04em;
+  }
+  .body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .name { font-size: 20px; font-weight: 600; letter-spacing: -.01em; margin: 0; }
+  .tool { color: var(--muted); font-size: 13px; }
+  .status { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 4px 8px; border-radius: 6px; }
+  .status.ok { color: var(--ok); background: rgba(62,207,142,.1); }
+  .status.failed, .status.missing { color: var(--bad); background: rgba(255,92,92,.1); }
+  .status.pending { color: var(--warn); background: rgba(245,185,59,.1); }
+  .links { display: flex; gap: 8px; margin-top: auto; }
+  .btn {
+    flex: 1; text-align: center; text-decoration: none; font-size: 13px; font-weight: 600;
+    padding: 11px 12px; border-radius: 10px; border: 1px solid var(--line); color: var(--text);
+    transition: background .2s, border-color .2s;
+  }
+  .btn:hover { background: #1b1e24; border-color: #3a3f49; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #111; }
+  .btn.primary:hover { background: #ff8340; }
+  .empty { color: var(--muted); border: 1px dashed var(--line); border-radius: 16px; padding: 48px; text-align: center; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 0 16px; }
+    header { padding: 56px 0 32px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">AI Web Design Benchmark</div>
+    <h1>Nagamura Bench<br><span>同じ課題、AIごとの答え。</span></h1>
+    <p class="lead">
+      課題：精密板金加工メーカー <a href="https://nagamura.co.jp/" target="_blank" rel="noopener">株式会社長村製作所</a> の
+      公式サイトを、モダンでリッチなデザインにリニューアルする。既存の掲載情報はすべて網羅しつつ、
+      写真の加工や 3D / WebGL 表現も含めて各 AI がゼロから設計・実装・デプロイしました。
+    </p>
+    <div class="meta">
+      <span class="chip">同一プロンプト</span>
+      <span class="chip">各AIが自律的に調査・実装・デプロイ</span>
+      <span class="chip" id="count">— models</span>
+    </div>
+  </header>
+
+  <main class="grid" id="grid" aria-live="polite"></main>
+</div>
+<footer>
+  <div class="wrap">各サイトはベンチマーク用の非公式リニューアル案です。正式な情報は <a href="https://nagamura.co.jp/" style="color:inherit">nagamura.co.jp</a> をご覧ください。</div>
+</footer>
+
+<script>
+  // GitHub Pages の URL から <owner>/<repo> を推定（REPORT / ソースへのリンク用）
+  const owner = location.hostname.endsWith('github.io') ? location.hostname.split('.')[0] : null;
+  const repo = location.pathname.split('/').filter(Boolean)[0];
+  const ghBase = owner && repo ? `https://github.com/${owner}/${repo}/tree/main` : null;
+  const ghBlob = owner && repo ? `https://github.com/${owner}/${repo}/blob/main` : null;
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+  const initials = n => n.split(/\s+/).map(w => w[0]).join('').slice(0, 3).toUpperCase();
+
+  Promise.all([
+    fetch('models.json', { cache: 'no-store' }).then(r => r.json()),
+    fetch('status.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  ]).then(([models, status]) => {
+    const grid = document.getElementById('grid');
+    document.getElementById('count').textContent = `${models.length} models`;
+    if (!models.length) {
+      grid.innerHTML = '<div class="empty">まだモデルが登録されていません。</div>';
+      return;
+    }
+    grid.innerHTML = models.map(m => {
+      const st = status[m.slug] || 'pending';
+      const label = { ok: 'Live', failed: 'Build failed', missing: 'Missing', pending: 'Pending' }[st] || st;
+      return `
+      <article class="card">
+        <a class="thumb" href="${esc(m.slug)}/" aria-label="${esc(m.name)} のサイトを開く">
+          <div class="ph">${esc(initials(m.name))}</div>
+          <img src="_shots/${esc(m.slug)}.jpg" alt="" loading="lazy" onerror="this.remove()">
+        </a>
+        <div class="body">
+          <div class="row">
+            <div>
+              <h2 class="name">${esc(m.name)}</h2>
+              <div class="tool">${esc(m.tool || '')}</div>
+            </div>
+            <span class="status ${esc(st)}">${esc(label)}</span>
+          </div>
+          <div class="links">
+            <a class="btn primary" href="${esc(m.slug)}/">サイトを見る</a>
+            ${ghBlob ? `<a class="btn" href="${ghBlob}/${esc(m.slug)}/REPORT.md" target="_blank" rel="noopener">Report</a>` : ''}
+            ${ghBase ? `<a class="btn" href="${ghBase}/${esc(m.slug)}" target="_blank" rel="noopener">Source</a>` : ''}
+          </div>
+        </div>
+      </article>`;
+    }).join('');
+  }).catch(err => {
+    document.getElementById('grid').innerHTML = `<div class="empty">models.json を読み込めませんでした（${esc(err.message)}）</div>`;
+  });
+</script>
+</body>
+</html>

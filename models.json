@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "fable-5-1",
+    "name": "Claude Fable 5.1",
+    "tool": "Claude Code"
+  },
+  {
+    "slug": "opus-5-5",
+    "name": "Claude Opus 5.5",
+    "tool": "Claude Code"
+  },
+  {
+    "slug": "gpt-6-sol",
+    "name": "GPT-6 Sol",
+    "tool": "Codex"
+  }
+]
