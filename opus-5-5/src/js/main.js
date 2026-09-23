@@ -282,10 +282,11 @@ if ($('[data-eq]')) import('./equipment.js').then((m) => m.init());
 if ($('[data-blog]')) import('./blog.js').then((m) => m.init());
 if ($('[data-cform]')) import('./contact.js').then((m) => m.init());
 if ($('[data-hero-video]')) {
+  // Background film: desktop only; phones, Save-Data and reduced-motion get the still poster.
   const v = $('[data-hero-video]');
   const saveData = navigator.connection && navigator.connection.saveData;
-  if (reduce || saveData) { v.removeAttribute('autoplay'); v.pause(); }
-  else {
+  if (!reduce && !saveData && matchMedia('(min-width: 900px)').matches) {
+    v.src = v.dataset.src;
     v.play?.().catch(() => {});
     new IntersectionObserver(([en]) => { en.isIntersecting ? v.play().catch(() => {}) : v.pause(); }).observe(v);
   }

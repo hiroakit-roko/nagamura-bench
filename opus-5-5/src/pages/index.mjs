@@ -29,9 +29,7 @@ export default {
 <canvas id="gl" class="gl" aria-hidden="true"></canvas>
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__media" aria-hidden="true">
-    <video data-hero-video muted loop playsinline autoplay preload="metadata" poster="${imgUrl(r, 'hero-poster')}">
-      <source src="${r}assets/video/factory.mp4" type="video/mp4">
-    </video>
+    <video data-hero-video data-src="${r}assets/video/factory.mp4" muted loop playsinline preload="none" poster="${imgUrl(r, 'hero-poster')}"></video>
   </div>
   <div class="hero__lines" aria-hidden="true"></div>
   <p class="hero__side" aria-hidden="true">36.3476°N 139.7319°E — OHIRA, TOCHIGI</p>
@@ -110,7 +108,7 @@ export default {
       <div class="stat rv"><p class="stat__label">創業</p><p class="stat__num"><span data-count="${y}" data-years>${y}</span><small>年</small></p><p class="stat__note">1938年（昭和13年）5月5日 設立</p></div>
       <div class="stat rv" style="--d:.08s"><p class="stat__label">社員数</p><p class="stat__num"><span data-count="58">58</span><small>名</small></p><p class="stat__note">2026年1月時点</p></div>
       <div class="stat rv" style="--d:.16s"><p class="stat__label">保有設備</p><p class="stat__num"><span data-count="${EQ_TOTAL_UNITS}">${EQ_TOTAL_UNITS}</span><small>台</small></p><p class="stat__note">設備概要に掲載の全${EQ_TOTAL_KINDS}項目・7カテゴリの台数合計</p></div>
-      <div class="stat rv" style="--d:.24s"><p class="stat__label">対応板厚</p><p class="stat__num"><span data-count="0.5" data-dec="1">0.5</span><small>–</small><span data-count="6.0" data-dec="1">6.0</span><small>mm</small></p><p class="stat__note">鉄 0.6〜6.0 / ステンレス 0.5〜6.0 / アルミ 0.8〜6.0mm（4×8サイズ迄）</p></div>
+      <div class="stat rv" style="--d:.24s"><p class="stat__label">対応板厚</p><p class="stat__num stat__num--sm"><span data-count="0.5" data-dec="1">0.5</span><small>–</small><span data-count="6.0" data-dec="1">6.0</span><small>mm</small></p><p class="stat__note">鉄 0.6〜6.0 / ステンレス 0.5〜6.0 / アルミ 0.8〜6.0mm（4×8サイズ迄）</p></div>
     </div>
   </div>
 </section>

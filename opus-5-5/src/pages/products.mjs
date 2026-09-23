@@ -1,4 +1,4 @@
-import { img, head, pageHero, toc, btn, SITE } from '../lib.mjs';
+import { img, imgUrl, head, pageHero, toc, btn, SITE } from '../lib.mjs';
 import { PRODUCTS } from '../data.mjs';
 
 export default {
@@ -46,6 +46,16 @@ ${toc([...PRODUCTS.map((g) => [g.id, g.ja]), ['brands', '自社ブランド']])}
           ['電源', 'AC100V 50/60Hz'], ['ガラス面', '5m/m板厚強化ガラス'], ['枠材', 'アルミニウム合金押出異型材'], ['照明設備', 'LEDダウンライト'], ['センサー', '熱線センサ付自動スイッチ'], ['換気設備', 'ダクト用換気扇'],
         ])}
         <p class="note" style="margin-top:10px">上記以外のサイズをご希望の方は個別にお問い合わせください。オプション：カッティングシートを付属できます。<br>導入の流れ：お問い合わせ・資料請求 → 現地調査（無料） → 工事費なども含めた正式なお見積もり → 基礎工事（必要な場合） → 設置</p>
+        <div class="yt" style="margin-top:24px"><img src="${imgUrl(r, 'smox-clear', 960)}" alt="" loading="lazy" style="object-fit:contain;background:#fff"><button type="button" data-yt="yHSOGVdjLnE" data-title="SMOX 排気実験の様子"><span class="play" aria-hidden="true"></span>排気実験の様子を再生（YouTube）</button></div>
+        <details class="legacy" style="margin-top:16px">
+          <summary>喫煙ブースの設置要件・導入実績</summary>
+          <div class="legacy__body">
+            <p class="note">2018年7月、多数の者が利用する施設等に対し一定の場所以外での喫煙が禁止になり、管理権限者には受動喫煙を防止するための責務があります。</p>
+            <h4>屋外</h4><p>幼稚園や小学校などの一部の建物を除いて、以下の基準を満たした場合に設置できます：禁煙場所と区画されていること／喫煙所としての標識が設置されていること／受動喫煙を生じさせることがないように配慮されていること。設置可能な場所の例：大学・病院・コンビニ・工場・市役所（上記以外でもほとんどの場所に設置可能です）。</p>
+            <h4>屋内</h4><p>出入口において喫煙室の外側から内側に流入する空気の気流が0.2ｍ／秒以上であること／たばこの煙（加熱式たばこの蒸気を含む。）が喫煙室の中から施設の屋内に流出しないよう、壁・天井等によって区画すること／たばこの煙が施設の屋外に排気されていること。『SMOX』は上記の条件をクリアしています。</p>
+            <h4>導入実績：ドコモショップ足利山辺店</h4><p>「換気能力が高いためか、全くタバコの匂いがBOXに残らないためほとんど掃除をしなくても使えています。また、換気扇からでる煙や匂いに関しても排気ダクトが外に繋がっているため、タバコを吸わない従業員も助かっています。」</p>
+          </div>
+        </details>
         <div class="btn-row" style="margin-top:24px">${btn('https://nagamura.co.jp/smox/', 'SMOX 公式サイト', { external: true })}${btn(SITE.smoxForm, '資料請求・お問い合わせ', { external: true, variant: 'btn--red' })}</div>
       </div>
     </article>
@@ -64,13 +74,15 @@ ${toc([...PRODUCTS.map((g) => [g.id, g.ja]), ['brands', '自社ブランド']])}
           ['サイズ・重量', 'オーダーメイドであるため、現地調査後に確定いたします。'], ['電源', 'AC100V 50/60Hz'], ['ガラス面', '5m/m板厚強化ガラス'], ['枠材', 'アルミニウム合金押出異型材'], ['照明設備', 'LEDダウンライト'], ['センサー', '熱戦センサ付自動スイッチ ※手動スイッチへの変更も可能です。'], ['エアコン', 'ご希望により設置可能'],
         ])}
         <p class="note" style="margin-top:10px">割賦支払いのお支払い例：サイズ 2700×900／本体価格 200万円（設置工事費込み）／金利 年利5～7％／支払回数 60回／月額 約39,000円（※割賦支払いには利息が発生いたします）。<br>お電話でのお問い合わせ受付時間：平日 8:15 ～ 17:00（KOVAKOサイト記載）</p>
+        <div class="yt" style="margin-top:24px"><img src="${imgUrl(r, 'kovako-booth', 960)}" alt="" loading="lazy"><button type="button" data-yt="L2UgGfBdmT8" data-title="KOVAKO 開発ストーリー"><span class="play" aria-hidden="true"></span>開発ストーリーを再生（YouTube）</button></div>
+        <p class="note" style="margin-top:10px">開発のきっかけは、法改正された溶接ヒュームに関する規則（特化則第37条：作業場所以外の場所に休憩室を設ける）に当社として対応するため、換気性能の高いファクトリーブースを作ろうと考えたことでした。</p>
         <div class="btn-row" style="margin-top:24px">${btn('https://nagamura.co.jp/kovako/', 'KOVAKO 公式サイト', { external: true })}${btn(SITE.kovakoForm, '資料請求はこちら', { external: true, variant: 'btn--red' })}</div>
       </div>
     </article>
 
     <article class="bpanel" id="monobo" aria-labelledby="b-monobo">
       <div class="bpanel__media" data-lb-group>
-        <figure class="figure">${img(r, 'monobo-room', 'Monoboの内部（4人用・対面型）', { sizes: '(min-width:960px) 45vw, 100vw', lb: 'Monoboの内部' })}</figure>
+        <figure class="figure">${img(r, 'monobo-room', 'Monoboの内部', { sizes: '(min-width:960px) 45vw, 100vw', lb: 'Monoboの内部' })}</figure>
         <figure class="figure">${img(r, 'monobo-1', 'Monobo 1人用', { sizes: '22vw', lb: 'Monobo 1人用' })}</figure>
         <figure class="figure">${img(r, 'monobo-4', 'Monobo 4人用', { sizes: '22vw', lb: 'Monobo 4人用' })}</figure>
       </div>
